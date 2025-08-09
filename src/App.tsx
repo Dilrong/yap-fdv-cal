@@ -1,5 +1,5 @@
 import Tooltip from "./components/Tooltip";
-import yappingCalculator from "./components/yappingCalculator";
+import YappingCalculator from "./components/YappingCalculator";
 import { leaderboards } from "./constants/leaderboard";
 import { useState, useMemo, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -227,7 +227,7 @@ function App() {
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.5, duration: 0.5 }}
                 >
-                  <yappingCalculator selectedToken={selectedToken} />
+                  <YappingCalculator selectedToken={selectedToken} />
                 </motion.div>
               </div>
             </div>

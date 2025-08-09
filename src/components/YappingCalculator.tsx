@@ -14,7 +14,7 @@ interface yappingCalculatorProps {
   } | null;
 }
 
-export default function yappingCalculator({
+export default function YappingCalculator({
   selectedToken,
 }: yappingCalculatorProps) {
   const [fdv, setFdv] = useState<number>(1000000); // Default 1M
