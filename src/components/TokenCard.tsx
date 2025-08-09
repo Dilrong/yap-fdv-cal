@@ -4,7 +4,7 @@ interface TokenCardProps {
   ticker: string;
   imgUrl: string;
   totalSupply: number;
-  yapingRewardPercentage: number;
+  yappingRewardPercentage: number;
   formatNumber: (num: number) => string;
 }
 
@@ -12,7 +12,7 @@ export default function TokenCard({
   ticker,
   imgUrl,
   totalSupply,
-  yapingRewardPercentage,
+  yappingRewardPercentage,
   formatNumber,
 }: TokenCardProps) {
   const getCoinMarketCapLink = (ticker: string) => {
@@ -65,9 +65,9 @@ export default function TokenCard({
               </p>
             </div>
             <div>
-              <p className="text-white/40 text-xs">Yaping Reward</p>
+              <p className="text-white/40 text-xs">yapping Reward</p>
               <p className="text-green-400 font-medium">
-                {yapingRewardPercentage}%
+                {yappingRewardPercentage}%
               </p>
             </div>
           </div>

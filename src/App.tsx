@@ -1,5 +1,5 @@
 import Tooltip from "./components/Tooltip";
-import YapingCalculator from "./components/YapingCalculator";
+import yappingCalculator from "./components/yappingCalculator";
 import { leaderboards } from "./constants/leaderboard";
 import { useState, useMemo, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -9,14 +9,14 @@ function App() {
     ticker: string;
     imgUrl: string;
     totalSupply?: number;
-    yapingRewardPercentage?: number;
+    yappingRewardPercentage?: number;
   }
 
   const [selectedToken, setSelectedToken] = useState<{
     ticker: string;
     imgUrl: string;
     totalSupply: number;
-    yapingRewardPercentage?: number;
+    yappingRewardPercentage?: number;
   } | null>(null);
 
   const [isTokenListVisible, setIsTokenListVisible] = useState(true);
@@ -26,7 +26,7 @@ function App() {
       ticker: token.ticker,
       imgUrl: token.imgUrl,
       totalSupply: token.totalSupply || 1000000000, // 기본값: 1B
-      yapingRewardPercentage: token.yapingRewardPercentage || 0.1, // 기본값: 0.1%
+      yappingRewardPercentage: token.yappingRewardPercentage || 0.1, // 기본값: 0.1%
     });
     // 토큰 선택 시 리스트 숨기기 (모든 화면 크기에서)
     setIsTokenListVisible(false);
@@ -136,7 +136,7 @@ function App() {
                   className="space-y-4 md:space-y-6"
                 >
                   <h1 className="text-2xl md:text-4xl lg:text-5xl font-light text-white/90 tracking-wide px-4">
-                    How much is the yaping reward?
+                    How much is the yapping reward?
                   </h1>
                   <motion.div
                     initial={{ width: 0 }}
@@ -178,7 +178,7 @@ function App() {
                     <p className="text-white/50 text-sm px-4">
                       {selectedToken && !isTokenListVisible
                         ? "Tap the selected token below to change selection"
-                        : "Choose a token to calculate yaping rewards"}
+                        : "Choose a token to calculate yapping rewards"}
                     </p>
                   </div>
 
@@ -227,7 +227,7 @@ function App() {
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.5, duration: 0.5 }}
                 >
-                  <YapingCalculator selectedToken={selectedToken} />
+                  <yappingCalculator selectedToken={selectedToken} />
                 </motion.div>
               </div>
             </div>

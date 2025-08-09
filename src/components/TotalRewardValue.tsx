@@ -31,7 +31,7 @@ export default function TotalRewardValue({
           </motion.div>
           <div>
             <p className="text-green-400/80 font-light mb-2">
-              Total Yaping Reward Value
+              Total yapping Reward Value
             </p>
             <motion.p
               key={rewardValue}

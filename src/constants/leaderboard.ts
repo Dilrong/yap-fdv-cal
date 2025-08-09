@@ -5,7 +5,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "ALLORA",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1, // 0.1% of total supply
+    yappingRewardPercentage: 0.1, // 0.1% of total supply
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FALLORA%252FALLORA.jpg/w=64&q=90",
     id: 3,
@@ -16,7 +16,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "TURTLECLUB",
     totalSupply: 10000000000,
-    yapingRewardPercentage: 0.15,
+    yappingRewardPercentage: 0.15,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FTURTLECLUB%252FTURTLECLUB.png/w=64&q=90",
     id: 85,
@@ -27,7 +27,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "BLS",
     totalSupply: 500000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FBLS%252FBLS.png%253Fv%253D1/w=64&q=90",
     id: 83,
@@ -38,7 +38,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "QUAI",
     totalSupply: 20000000000,
-    yapingRewardPercentage: 0.12,
+    yappingRewardPercentage: 0.12,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FQUAI%252FQUAI.jpg/w=64&q=90",
     id: 44,
@@ -49,7 +49,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "MOVEMENT",
     totalSupply: 10000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FMOVEMENT%252FMOVEMENT.jpg/w=64&q=90",
     id: 55,
@@ -60,7 +60,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "WAYFINDER",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.09,
+    yappingRewardPercentage: 0.09,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FWAYFINDER%252FWAYFINDER.jpg/w=64&q=90",
     id: 46,
@@ -71,7 +71,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "SATLAYER",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.13,
+    yappingRewardPercentage: 0.13,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FSATLAYER%252FSATLAYER.png/w=64&q=90",
     id: 49,
@@ -82,7 +82,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "SYMPHONY",
     totalSupply: 2000000000,
-    yapingRewardPercentage: 0.11,
+    yappingRewardPercentage: 0.11,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FSYMPHONY%252FSYMPHONY.jpg/w=64&q=90",
     id: 31,
@@ -93,7 +93,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "CORN",
     totalSupply: 100000000000,
-    yapingRewardPercentage: 0.07,
+    yappingRewardPercentage: 0.07,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FCORN%252FCORN.png/w=64&q=90",
     id: 57,
@@ -104,7 +104,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "ARB",
     totalSupply: 10000000000,
-    yapingRewardPercentage: 0.05,
+    yappingRewardPercentage: 0.05,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FARB%252FARB.png/w=64&q=90",
     id: 51,
@@ -115,7 +115,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "INITIA",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.14,
+    yappingRewardPercentage: 0.14,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FINITIA%252FINITIA.jpg/w=64&q=90",
     id: 34,
@@ -126,7 +126,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "HANAHANA",
     totalSupply: 10000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FHANAHANA%252FHANAHANA.jpg/w=64&q=90",
     id: 79,
@@ -137,7 +137,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "CAMP",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.16,
+    yappingRewardPercentage: 0.16,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FCAMP%252FCAMP.jpg/w=64&q=90",
     id: 16,
@@ -148,7 +148,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "CALDERA",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.09,
+    yappingRewardPercentage: 0.09,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FCALDERA%252FCALDERA.png/w=64&q=90",
     id: 13,
@@ -159,7 +159,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "INFINEX",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.18,
+    yappingRewardPercentage: 0.18,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FINFINEX%252FINFINEX.jpg/w=64&q=90",
     id: 64,
@@ -170,7 +170,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "KAT",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.12,
+    yappingRewardPercentage: 0.12,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FKAT%252FKAT.png/w=64&q=90",
     id: 72,
@@ -181,7 +181,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "PARADEX",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.11,
+    yappingRewardPercentage: 0.11,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fyapper%252Ficon%252Fparadex.png%253Fv%253D1/w=64&q=90",
     id: 28,
@@ -192,7 +192,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "NEWTON",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FNEWTON%252FNEWTON.jpg/w=64&q=90",
     id: 27,
@@ -203,7 +203,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "FUEL",
     totalSupply: 10000000000,
-    yapingRewardPercentage: 0.06,
+    yappingRewardPercentage: 0.06,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fyapper%252FFUEL.jpg/w=64&q=90",
     id: 66,
@@ -214,7 +214,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "PENGU",
     totalSupply: 88888888888,
-    yapingRewardPercentage: 0.04,
+    yappingRewardPercentage: 0.04,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FPENGU%252FPENGU.png/w=64&q=90",
     id: 42,
@@ -225,7 +225,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "MEGAETH",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.15,
+    yappingRewardPercentage: 0.15,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FMEGAETH%252FMEGAETH.jpg/w=64&q=90",
     id: 25,
@@ -236,7 +236,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "MULTIPLI",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.13,
+    yappingRewardPercentage: 0.13,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FMULTIPLI%252FMULTIPLI.png/w=64&q=90",
     id: 68,
@@ -247,7 +247,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "SO",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.17,
+    yappingRewardPercentage: 0.17,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FSO%252FSO.png/w=64&q=90",
     id: 8,
@@ -258,7 +258,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "YEET",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.19,
+    yappingRewardPercentage: 0.19,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FYEET%252FYEET.jpg/w=64&q=90",
     id: 32,
@@ -269,7 +269,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "S",
     totalSupply: 10000000000,
-    yapingRewardPercentage: 0.07,
+    yappingRewardPercentage: 0.07,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FS%252FS.png/w=64&q=90",
     id: 90,
@@ -280,7 +280,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "KAIA",
     totalSupply: 6000000000,
-    yapingRewardPercentage: 0.05,
+    yappingRewardPercentage: 0.05,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FKAIA%252FKAIA.png/w=64&q=90",
     id: 35,
@@ -291,7 +291,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "STORYPROTOCOL",
     totalSupply: 1500000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FSTORYPROTOCOL%252FSTORYPROTOCOL.png/w=64&q=90",
     id: 22,
@@ -302,7 +302,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "DEFIAPP",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.06,
+    yappingRewardPercentage: 0.06,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FDEFIAPP%252FDEFIAPP.jpg/w=64&q=90",
     id: 18,
@@ -313,7 +313,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "MITOSIS",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.14,
+    yappingRewardPercentage: 0.14,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FMITOSIS%252FMITOSIS.jpg/w=64&q=90",
     id: 53,
@@ -324,7 +324,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "BOUNDLESS",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.12,
+    yappingRewardPercentage: 0.12,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FBOUNDLESS%252FBOUNDLESS.jpg/w=64&q=90",
     id: 84,
@@ -335,7 +335,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "0G",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252F0G%252F0G.jpg/w=64&q=90",
     id: 1,
@@ -346,7 +346,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "ANOMA",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FANOMA%252FANOMA.jpg/w=64&q=90",
     id: 86,
@@ -357,7 +357,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "FOGO",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FFOGO%252FFOGO.png/w=64&q=90",
     id: 15,
@@ -368,7 +368,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "GOATNETWORK",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FGOATNETWORK%252FGOATNETWORK.jpg/w=64&q=90",
     id: 80,
@@ -379,7 +379,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "HYPERBOLIC",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FHYPERBOLIC%252FHYPERBOLIC.jpg/w=64&q=90",
     id: 23,
@@ -390,7 +390,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "LOMBARD",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FLOMBARD%252FLOMBARD.png/w=64&q=90",
     id: 61,
@@ -401,7 +401,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "LUMITERRA",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FLUMITERRA%252FLUMITERRA.png/w=64&q=90",
     id: 87,
@@ -412,7 +412,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "MIRA",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FMIRA%252FMIRA.jpg/w=64&q=90",
     id: 73,
@@ -423,7 +423,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "NOYA",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FNOYA%252FNOYA.jpg/w=64&q=90",
     id: 78,
@@ -434,7 +434,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "OPENLEDGER",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FOPENLEDGER%252FOPENLEDGER.jpg/w=64&q=90",
     id: 58,
@@ -445,7 +445,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "PUFFPAW",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FPUFFPAW%252FPUFFPAW.png/w=64&q=90",
     id: 69,
@@ -456,7 +456,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "SOMNIA",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FSOMNIA%252FSOMNIA.jpg/w=64&q=90",
     id: 30,
@@ -467,7 +467,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "SURF",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FSURF%252FSURF.jpg/w=64&q=90",
     id: 91,
@@ -478,7 +478,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "UNION",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FUNION%252FUNION.png/w=64&q=90",
     id: 41,
@@ -489,7 +489,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "ANIME",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FANIME%252FANIME.jpg/w=64&q=90",
     id: 48,
@@ -500,7 +500,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "APT",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FAPT%252F0698861d44f2b92255c827d10a6479f1/w=64&q=90",
     id: 11,
@@ -511,7 +511,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "BOOPBOOPFUN",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FBOOPBOOPFUN%252FBOOPBOOPFUN.png/w=64&q=90",
     id: 20,
@@ -522,7 +522,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "HUMAFINANCE",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FHUMAFINANCE%252FHUMAFINANCE.png/w=64&q=90",
     id: 47,
@@ -533,7 +533,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "INJ",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FINJ%252FINJ.png/w=64&q=90",
     id: 70,
@@ -544,7 +544,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "IQ",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FIQ%252F45a8f74e599aec431cf690f66d8d4b0d/w=64&q=90",
     id: 56,
@@ -555,7 +555,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "KINTO",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FKINTO%252FKINTO.png/w=64&q=90",
     id: 59,
@@ -566,7 +566,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "MAPLESTORYUNIVERSE",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FMAPLESTORYUNIVERSE%252FMAPLESTORYUNIVERSE.jpg/w=64&q=90",
     id: 21,
@@ -577,7 +577,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "NEAR",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FNEAR%252F5515f26bd8870ae5953ebac9067383ae/w=64&q=90",
     id: 52,
@@ -588,7 +588,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "PEAQ",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FPEAQ%252FPEAQ.png/w=64&q=90",
     id: 82,
@@ -599,7 +599,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "DOT",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FDOT%252FDOT.jpg/w=64&q=90",
     id: 5,
@@ -610,7 +610,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "PYTH",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FPYTH%252FPYTH.png/w=64&q=90",
     id: 36,
@@ -621,7 +621,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "SEI",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FSEI%252Fec92adf7ddda0286110f4ee4adf4f722/w=64&q=90",
     id: 37,
@@ -632,7 +632,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "SOON",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FSOON%252FSOON.png/w=64&q=90",
     id: 45,
@@ -643,7 +643,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "STARKNET",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FSTARKNET%252FSTARKNET.png/w=64&q=90",
     id: 62,
@@ -654,7 +654,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "UXLINK",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FUXLINK%252FUXLINK.jpg/w=64&q=90",
     id: 74,
@@ -665,7 +665,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "XION",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fyapper%252Ficon%252Fxion.png/w=64&q=90",
     id: 39,
@@ -676,7 +676,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "ZEC",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FZEC%252F3e3b5d8d0c039a6e28075284a7d70862/w=64&q=90",
     id: 71,
@@ -687,7 +687,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "ECLIPSE",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fyapper%252Fpng%252FEclipse.png/w=64&q=90",
     id: 14,
@@ -698,7 +698,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "SKATE",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FSKATE%252FSKATE.jpg/w=64&q=90",
     id: 60,
@@ -709,7 +709,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "MULTIBANK",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FMULTIBANK%252FMULTIBANK.jpg/w=64&q=90",
     id: 26,
@@ -720,7 +720,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "INFINIT",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FINFINIT%252FINFINIT.png/w=64&q=90",
     id: 92,
@@ -731,7 +731,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "IRYS",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FIRYS%252FIRYS.jpg/w=64&q=90",
     id: 24,
@@ -742,7 +742,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "MEMEX",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FMEMEX%252FMEMEX.png%253Fv%253D1/w=64&q=90",
     id: 89,
@@ -753,7 +753,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "MONAD",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fyapper%252Ficon%252FMonad.png/w=64&q=90",
     id: 67,
@@ -764,7 +764,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "NYT",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FNYT%252FNYT.png/w=64&q=90",
     id: 17,
@@ -775,7 +775,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "PORTALPORTAL",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FPORTALPORTAL%252FPORTALPORTAL.png/w=64&q=90",
     id: 7,
@@ -786,7 +786,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "SIDEKICK",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FSIDEKICK%252FSIDEKICK.jpg/w=64&q=90",
     id: 29,
@@ -797,7 +797,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "THEORIQ",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FTHEORIQ%252FTHEORIQ.jpg/w=64&q=90",
     id: 40,
@@ -808,7 +808,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "THRIVE",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FTHRIVE%252FTHRIVE.jpg/w=64&q=90",
     id: 2,
@@ -819,7 +819,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "WARP",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FWARP%252FWARP.png%253Fv%253D1/w=64&q=90",
     id: 81,
@@ -830,7 +830,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "KAITO",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fwww.kaito.ai%252Fhead_pic-dark.png/w=64&q=90",
     id: 43,
@@ -841,7 +841,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "BERA",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fyapper%252Ficon%252FBerachain.svg/w=64&q=90",
     id: 9,
@@ -852,7 +852,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "CREATORBID",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FCREATORBID%252FCREATORBID.jpg/w=64&q=90",
     id: 75,
@@ -863,7 +863,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "DYDX",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FDYDX%252FDYDX.jpg/w=64&q=90",
     id: 33,
@@ -874,7 +874,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "FRAX",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FFRAX%252F6b6aaf014e21732d8fbc4592086a74e8/w=64&q=90",
     id: 65,
@@ -885,7 +885,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "MNT",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FMNT%252FMNT.png/w=64&q=90",
     id: 10,
@@ -896,7 +896,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "OM",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FOM%252FOM_1.png/w=64&q=90",
     id: 6,
@@ -907,7 +907,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "ORDERLYNETWORK",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FORDERLYNETWORK%252FORDERLYNETWORK.jpg/w=64&q=90",
     id: 88,
@@ -918,7 +918,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "SOPHON",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FSOPHON%252FSOPHON.jpg/w=64&q=90",
     id: 38,
@@ -929,7 +929,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "VIRTUALECOSYSTEM",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FVIRTUAL%252FVIRTUAL.png/w=64&q=90",
     id: 4,
@@ -940,7 +940,7 @@ export const leaderboards = [
     category: "general",
     ticker: "",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fyapper%252Ficon%252Fct-leaderboard.svg/w=64&q=90",
     id: 54,
@@ -951,7 +951,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "FALCON",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FFALCON%252FFALCON.png/w=64&q=90",
     id: 100,
@@ -962,7 +962,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "CYSIC",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FCYSIC%252FCYSIC.png/w=64&q=90",
     id: 94,
@@ -973,7 +973,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "BLUE",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FBLUE%252FBLUE2.png/w=64&q=90",
     id: 97,
@@ -984,7 +984,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "BYBITTRADFI",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FBYBIT%252FBYBIT.jpg/w=64&q=90",
     id: 95,
@@ -995,7 +995,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "BILLIONS",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FBILLIONS%252FBILLIONS.jpg/w=64&q=90",
     id: 99,
@@ -1006,7 +1006,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "POL",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FPOL%252FPOL.png/w=64&q=90",
     id: 96,
@@ -1017,7 +1017,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "MOMENTUM",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FMOMENTUM%252FMOMENTUM.png/w=64&q=90",
     id: 98,
@@ -1028,7 +1028,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "SUCCINCT",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FSUCCINCT%252FSUCCINCT.jpg/w=64&q=90",
     id: 50,
@@ -1039,7 +1039,7 @@ export const leaderboards = [
     category: "postTGE",
     ticker: "HUMANITY",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.08,
+    yappingRewardPercentage: 0.08,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FHUMANITY%252FHUMANITY.jpg%253Fv%253D1/w=64&q=90",
     id: 12,
@@ -1050,7 +1050,7 @@ export const leaderboards = [
     category: "preTGE",
     ticker: "SAPIEN",
     totalSupply: 1000000000,
-    yapingRewardPercentage: 0.1,
+    yappingRewardPercentage: 0.1,
     imgUrl:
       "https://img.kaito.ai/v1/https%253A%252F%252Fkaito-public-assets.s3.us-west-2.amazonaws.com%252Fticker-icons%252FSAPIEN%252FSAPIEN.jpg/w=64&q=90",
     id: 101,

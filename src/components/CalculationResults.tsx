@@ -38,7 +38,7 @@ export default function CalculationResults({
         </div>
       </motion.div>
 
-      {/* Total Yaping Rewards */}
+      {/* Total yapping Rewards */}
       <motion.div
         whileHover={{ scale: 1.02 }}
         className="bg-white/[0.03] rounded-2xl p-6 border border-white/[0.05]"
@@ -47,7 +47,7 @@ export default function CalculationResults({
           <div className="w-12 h-12 mx-auto rounded-full bg-green-500/10 flex items-center justify-center mb-4">
             <span className="text-2xl">🎁</span>
           </div>
-          <p className="text-white/40 text-sm mb-2">Total Yaping Rewards</p>
+          <p className="text-white/40 text-sm mb-2">Total yapping Rewards</p>
           <p className="text-xl font-semibold text-green-400">
             {formatNumber(rewardTokens)} tokens
           </p>

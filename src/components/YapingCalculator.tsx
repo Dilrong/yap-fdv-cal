@@ -5,18 +5,18 @@ import FDVSlider from "./FDVSlider";
 import CalculationResults from "./CalculationResults";
 import TotalRewardValue from "./TotalRewardValue";
 
-interface YapingCalculatorProps {
+interface yappingCalculatorProps {
   selectedToken: {
     ticker: string;
     imgUrl: string;
     totalSupply: number;
-    yapingRewardPercentage?: number;
+    yappingRewardPercentage?: number;
   } | null;
 }
 
-export default function YapingCalculator({
+export default function yappingCalculator({
   selectedToken,
-}: YapingCalculatorProps) {
+}: yappingCalculatorProps) {
   const [fdv, setFdv] = useState<number>(1000000); // Default 1M
 
   const formatNumber = (num: number): string => {
@@ -37,7 +37,7 @@ export default function YapingCalculator({
           <div>
             <p className="text-white/70 font-light">Please select a project</p>
             <p className="text-white/40 text-sm mt-2">
-              Choose a token to calculate yaping rewards
+              Choose a token to calculate yapping rewards
             </p>
           </div>
         </div>
@@ -45,7 +45,7 @@ export default function YapingCalculator({
     );
   }
 
-  const rewardPercentage = selectedToken.yapingRewardPercentage || 0.1; // Default to 0.1% if not specified
+  const rewardPercentage = selectedToken.yappingRewardPercentage || 0.1; // Default to 0.1% if not specified
   const tokenPrice = fdv / selectedToken.totalSupply;
   const rewardTokens = (selectedToken.totalSupply * rewardPercentage) / 100;
   const rewardValue = rewardTokens * tokenPrice;
@@ -63,7 +63,7 @@ export default function YapingCalculator({
           ticker={selectedToken.ticker}
           imgUrl={selectedToken.imgUrl}
           totalSupply={selectedToken.totalSupply}
-          yapingRewardPercentage={rewardPercentage}
+          yappingRewardPercentage={rewardPercentage}
           formatNumber={formatNumber}
         />
 
