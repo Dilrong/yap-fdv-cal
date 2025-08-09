@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://yap-reward-calculator.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin areas (if any in future)
+# Disallow: /admin/
+
+# Allow all search engines to crawl the calculator
+Allow: /
+Allow: /favicon.svg
+Allow: /favicon-*.png
+Allow: /apple-touch-icon.png 
