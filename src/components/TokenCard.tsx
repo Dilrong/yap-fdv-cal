@@ -65,7 +65,7 @@ export default function TokenCard({
               </p>
             </div>
             <div>
-              <p className="text-white/40 text-xs">yapping Reward</p>
+              <p className="text-white/40 text-xs">Yapping Reward</p>
               <p className="text-green-400 font-medium">
                 {yappingRewardPercentage}%
               </p>

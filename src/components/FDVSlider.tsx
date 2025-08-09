@@ -3,10 +3,17 @@ import { motion } from "framer-motion";
 interface FDVSliderProps {
   fdv: number;
   setFdv: (value: number) => void;
+  min?: number;
+  max?: number;
 }
 
-export default function FDVSlider({ fdv, setFdv }: FDVSliderProps) {
-  const sliderProgress = ((fdv - 100000) / (10000000000 - 100000)) * 100;
+export default function FDVSlider({
+  fdv,
+  setFdv,
+  min = 100000,
+  max = 10000000000,
+}: FDVSliderProps) {
+  const sliderProgress = ((fdv - min) / (max - min)) * 100;
 
   const formatNumber = (num: number): string => {
     if (num >= 1000000000) return `${(num / 1000000000).toFixed(1)}B`;
@@ -51,9 +58,9 @@ export default function FDVSlider({ fdv, setFdv }: FDVSliderProps) {
         {/* HTML range input for functionality */}
         <input
           type="range"
-          min="100000"
-          max="10000000000"
-          step="100000"
+          min={min}
+          max={max}
+          step={Math.max(1000, (max - min) / 1000)}
           value={fdv}
           onChange={(e) => setFdv(Number(e.target.value))}
           className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
@@ -82,13 +89,14 @@ export default function FDVSlider({ fdv, setFdv }: FDVSliderProps) {
       </div>
 
       <div className="flex justify-between text-xs text-white/30">
-        <span>$100K</span>
-        <span>$10B</span>
+        <span>${formatNumber(min)}</span>
+        <span>${formatNumber(max)}</span>
       </div>
 
       <div className="text-center">
         <p className="text-white/40 text-xs">
-          🖱️ Drag the slider to adjust FDV • Min: $100K • Max: $10B
+          🖱️ Drag the slider to adjust FDV • Min: ${formatNumber(min)} • Max: $
+          {formatNumber(max)}
         </p>
       </div>
     </motion.div>

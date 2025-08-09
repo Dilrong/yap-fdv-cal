@@ -2,14 +2,16 @@ import { motion } from "framer-motion";
 
 interface TotalRewardValueProps {
   rewardValue: number;
+  participants: number;
   formatNumber: (num: number) => string;
 }
 
 export default function TotalRewardValue({
   rewardValue,
+  participants,
   formatNumber,
 }: TotalRewardValueProps) {
-  const individualRewardValue = rewardValue / 100; // 100명 기준 개인 보상
+  const individualRewardValue = rewardValue / participants;
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -31,7 +33,7 @@ export default function TotalRewardValue({
           </motion.div>
           <div>
             <p className="text-green-400/80 font-light mb-2">
-              Total yapping Reward Value
+              Total Yapping Reward Value
             </p>
             <motion.p
               key={rewardValue}
@@ -87,7 +89,7 @@ export default function TotalRewardValue({
               ${formatNumber(individualRewardValue)}
             </motion.p>
             <p className="text-white/30 text-sm mt-2">
-              Based on 100 participants
+              Based on {participants.toLocaleString()} participants
             </p>
           </div>
 

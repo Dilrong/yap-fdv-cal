@@ -4,6 +4,7 @@ interface CalculationResultsProps {
   tokenPrice: number;
   rewardTokens: number;
   rewardPercentage: number;
+  participants: number;
   formatNumber: (num: number) => string;
 }
 
@@ -11,9 +12,10 @@ export default function CalculationResults({
   tokenPrice,
   rewardTokens,
   rewardPercentage,
+  participants,
   formatNumber,
 }: CalculationResultsProps) {
-  const individualRewardTokens = rewardTokens / 100; // 100명 기준
+  const individualRewardTokens = rewardTokens / participants;
 
   return (
     <motion.div
@@ -38,7 +40,7 @@ export default function CalculationResults({
         </div>
       </motion.div>
 
-      {/* Total yapping Rewards */}
+      {/* Total Yapping Rewards */}
       <motion.div
         whileHover={{ scale: 1.02 }}
         className="bg-white/[0.03] rounded-2xl p-6 border border-white/[0.05]"
@@ -47,7 +49,7 @@ export default function CalculationResults({
           <div className="w-12 h-12 mx-auto rounded-full bg-green-500/10 flex items-center justify-center mb-4">
             <span className="text-2xl">🎁</span>
           </div>
-          <p className="text-white/40 text-sm mb-2">Total yapping Rewards</p>
+          <p className="text-white/40 text-sm mb-2">Total Yapping Rewards</p>
           <p className="text-xl font-semibold text-green-400">
             {formatNumber(rewardTokens)} tokens
           </p>
@@ -57,7 +59,7 @@ export default function CalculationResults({
         </div>
       </motion.div>
 
-      {/* Individual Reward (100명 기준) */}
+      {/* Individual Reward */}
       <motion.div
         whileHover={{ scale: 1.02 }}
         className="bg-white/[0.03] rounded-2xl p-6 border border-white/[0.05]"
@@ -70,7 +72,9 @@ export default function CalculationResults({
           <p className="text-xl font-semibold text-purple-400">
             {formatNumber(individualRewardTokens)} tokens
           </p>
-          <p className="text-white/30 text-xs mt-1">(100 participants)</p>
+          <p className="text-white/30 text-xs mt-1">
+            ({participants.toLocaleString()} participants)
+          </p>
         </div>
       </motion.div>
     </motion.div>

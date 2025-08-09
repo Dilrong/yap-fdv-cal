@@ -4,6 +4,13 @@ import TokenCard from "./TokenCard";
 import FDVSlider from "./FDVSlider";
 import CalculationResults from "./CalculationResults";
 import TotalRewardValue from "./TotalRewardValue";
+import AdvancedSettings from "./AdvancedSettings";
+import RewardDistribution from "./RewardDistribution";
+import DistributionResults from "./DistributionResults";
+import {
+  type DistributionModel,
+  distributionModels,
+} from "../constants/distributionModels";
 
 interface yappingCalculatorProps {
   selectedToken: {
@@ -18,6 +25,21 @@ export default function YappingCalculator({
   selectedToken,
 }: yappingCalculatorProps) {
   const [fdv, setFdv] = useState<number>(1000000); // Default 1M
+
+  // Advanced Settings States
+  const [participants, setParticipants] = useState<number>(100);
+  const [customRewardPercentage, setCustomRewardPercentage] =
+    useState<number>(0.1);
+  const [customTotalSupply, setCustomTotalSupply] =
+    useState<number>(1000000000);
+  const [fdvMin, setFdvMin] = useState<number>(100000);
+  const [fdvMax, setFdvMax] = useState<number>(10000000000);
+  const [useCustomValues, setUseCustomValues] = useState<boolean>(false);
+
+  // Distribution Settings
+  const [selectedDistributionModel, setSelectedDistributionModel] =
+    useState<DistributionModel>(distributionModels[0]);
+  const [totalParticipants, setTotalParticipants] = useState<number>(1000);
 
   const formatNumber = (num: number): string => {
     if (num >= 1000000000) return `${(num / 1000000000).toFixed(1)}B`;
@@ -45,9 +67,17 @@ export default function YappingCalculator({
     );
   }
 
-  const rewardPercentage = selectedToken.yappingRewardPercentage || 0.1; // Default to 0.1% if not specified
-  const tokenPrice = fdv / selectedToken.totalSupply;
-  const rewardTokens = (selectedToken.totalSupply * rewardPercentage) / 100;
+  // Use custom values if enabled, otherwise use token defaults
+  const effectiveRewardPercentage = useCustomValues
+    ? customRewardPercentage
+    : selectedToken.yappingRewardPercentage || 0.1;
+
+  const effectiveTotalSupply = useCustomValues
+    ? customTotalSupply
+    : selectedToken.totalSupply;
+
+  const tokenPrice = fdv / effectiveTotalSupply;
+  const rewardTokens = (effectiveTotalSupply * effectiveRewardPercentage) / 100;
   const rewardValue = rewardTokens * tokenPrice;
 
   return (
@@ -58,29 +88,68 @@ export default function YappingCalculator({
       className="relative overflow-hidden bg-white/[0.02] backdrop-blur-xl rounded-3xl p-8 border border-white/[0.05]"
     >
       <div className="space-y-8">
+        {/* Advanced Settings */}
+        <AdvancedSettings
+          participants={participants}
+          setParticipants={setParticipants}
+          customRewardPercentage={customRewardPercentage}
+          setCustomRewardPercentage={setCustomRewardPercentage}
+          customTotalSupply={customTotalSupply}
+          setCustomTotalSupply={setCustomTotalSupply}
+          fdvMin={fdvMin}
+          setFdvMin={setFdvMin}
+          fdvMax={fdvMax}
+          setFdvMax={setFdvMax}
+          useCustomValues={useCustomValues}
+          setUseCustomValues={setUseCustomValues}
+        />
+
+        {/* Reward Distribution Settings */}
+        <RewardDistribution
+          selectedModel={selectedDistributionModel}
+          setSelectedModel={setSelectedDistributionModel}
+          totalParticipants={totalParticipants}
+          setTotalParticipants={setTotalParticipants}
+        />
+
         {/* Selected Token Info */}
         <TokenCard
           ticker={selectedToken.ticker}
           imgUrl={selectedToken.imgUrl}
-          totalSupply={selectedToken.totalSupply}
-          yappingRewardPercentage={rewardPercentage}
+          totalSupply={effectiveTotalSupply}
+          yappingRewardPercentage={effectiveRewardPercentage}
           formatNumber={formatNumber}
         />
 
         {/* FDV Slider */}
-        <FDVSlider fdv={fdv} setFdv={setFdv} />
+        <FDVSlider fdv={fdv} setFdv={setFdv} min={fdvMin} max={fdvMax} />
 
-        {/* Calculation Results */}
-        <CalculationResults
-          tokenPrice={tokenPrice}
-          rewardTokens={rewardTokens}
-          rewardPercentage={rewardPercentage}
-          formatNumber={formatNumber}
-        />
+        {/* Basic Calculation Results (for simple equal distribution) */}
+        {selectedDistributionModel.id === "equal" && (
+          <CalculationResults
+            tokenPrice={tokenPrice}
+            rewardTokens={rewardTokens}
+            rewardPercentage={effectiveRewardPercentage}
+            participants={totalParticipants}
+            formatNumber={formatNumber}
+          />
+        )}
+
+        {/* Advanced Distribution Results */}
+        {selectedDistributionModel.id !== "equal" && (
+          <DistributionResults
+            rewardTokens={rewardTokens}
+            rewardValue={rewardValue}
+            distributionModel={selectedDistributionModel}
+            totalParticipants={totalParticipants}
+            formatNumber={formatNumber}
+          />
+        )}
 
         {/* Total Reward Value */}
         <TotalRewardValue
           rewardValue={rewardValue}
+          participants={totalParticipants}
           formatNumber={formatNumber}
         />
       </div>
