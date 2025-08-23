@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { priceService, PriceData } from "../services/priceService";
 
 interface TokenCardProps {
   ticker: string;
@@ -6,6 +8,7 @@ interface TokenCardProps {
   totalSupply: number;
   yappingRewardPercentage: number;
   formatNumber: (num: number) => string;
+  category?: string;
 }
 
 export default function TokenCard({
@@ -14,11 +17,66 @@ export default function TokenCard({
   totalSupply,
   yappingRewardPercentage,
   formatNumber,
+  category,
 }: TokenCardProps) {
+  const [priceData, setPriceData] = useState<PriceData | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const isPostTGE = category === "postTGE";
+
+  useEffect(() => {
+    if (!isPostTGE) return;
+
+    let mounted = true;
+    setIsLoading(true);
+    setError(null);
+
+    const fetchPrice = async () => {
+      try {
+        const data = await priceService.getPrice(ticker, totalSupply);
+        if (mounted) {
+          setPriceData(data);
+          setError(data ? null : "Price data not available");
+        }
+      } catch (err) {
+        if (mounted) {
+          setError("Failed to fetch price data");
+          console.error("Price fetch error:", err);
+        }
+      } finally {
+        if (mounted) {
+          setIsLoading(false);
+        }
+      }
+    };
+
+    fetchPrice();
+
+    // 30초마다 가격 업데이트
+    const interval = setInterval(fetchPrice, 30000);
+
+    return () => {
+      mounted = false;
+      clearInterval(interval);
+    };
+  }, [ticker, totalSupply, isPostTGE]);
+
   const getCoinMarketCapLink = (ticker: string) => {
     // CoinMarketCap uses lowercase ticker for most coins
     const searchTicker = ticker.toLowerCase();
     return `https://coinmarketcap.com/currencies/${searchTicker}/`;
+  };
+
+  const formatPrice = (price: number) => {
+    if (price >= 1) return `$${price.toFixed(2)}`;
+    if (price >= 0.01) return `$${price.toFixed(4)}`;
+    return `$${price.toFixed(6)}`;
+  };
+
+  const formatChange = (change: number) => {
+    const sign = change >= 0 ? "+" : "";
+    return `${sign}${change.toFixed(2)}%`;
   };
 
   return (
@@ -28,17 +86,28 @@ export default function TokenCard({
       transition={{ delay: 0.1 }}
       className="bg-white/[0.03] rounded-2xl p-6 border border-white/[0.05]"
     >
-      <div className="flex items-center gap-4">
-        <div className="w-16 h-16 rounded-2xl overflow-hidden bg-white/[0.05] flex items-center justify-center">
+      <div className="flex items-start gap-4">
+        <div className="w-16 h-16 rounded-2xl overflow-hidden bg-white/[0.05] flex items-center justify-center relative">
           <img
             src={imgUrl}
             alt={ticker}
             className="w-12 h-12 rounded-xl object-cover"
           />
+          {isPostTGE && (
+            <div className="absolute -top-1 -right-1 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+              <span className="text-white text-xs font-bold">$</span>
+            </div>
+          )}
         </div>
+
         <div className="flex-1">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 mb-2">
             <h3 className="text-xl font-semibold text-white">{ticker}</h3>
+            {isPostTGE && (
+              <span className="px-2 py-0.5 bg-green-500/20 text-green-400 text-xs rounded-full border border-green-500/30">
+                LIVE
+              </span>
+            )}
             <a
               href={getCoinMarketCapLink(ticker)}
               target="_blank"
@@ -57,7 +126,41 @@ export default function TokenCard({
               </svg>
             </a>
           </div>
-          <div className="flex gap-4 mt-2">
+
+          {/* Price Information for Post-TGE tokens */}
+          {isPostTGE && (
+            <div className="mb-3 p-2 bg-white/[0.02] rounded-lg border border-white/[0.05]">
+              {isLoading ? (
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                  <span className="text-white/60 text-xs">Loading...</span>
+                </div>
+              ) : error ? (
+                <div className="text-red-400/70 text-xs">{error}</div>
+              ) : priceData ? (
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-white/60">
+                    Price: {formatPrice(priceData.price)}
+                  </span>
+                  <span
+                    className={`${
+                      priceData.priceChange24h >= 0
+                        ? "text-green-400"
+                        : "text-red-400"
+                    }`}
+                  >
+                    {formatChange(priceData.priceChange24h)}
+                  </span>
+                  <span className="text-cyan-400">
+                    FDV: ${formatNumber(priceData.fdv)}
+                  </span>
+                </div>
+              ) : null}
+            </div>
+          )}
+
+          {/* Token Information */}
+          <div className="grid grid-cols-2 gap-4">
             <div>
               <p className="text-white/40 text-xs">Total Supply</p>
               <p className="text-blue-400 font-medium">

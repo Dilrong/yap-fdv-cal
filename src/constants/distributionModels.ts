@@ -1,17 +1,4 @@
-export interface DistributionTier {
-  name: string;
-  percentage: number;
-  participants: number;
-  color: string;
-}
-
-export interface DistributionModel {
-  id: string;
-  name: string;
-  description: string;
-  icon: string;
-  tiers: DistributionTier[];
-}
+import { DistributionModel } from "../types";
 
 export const distributionModels: DistributionModel[] = [
   {

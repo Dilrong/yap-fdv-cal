@@ -1,36 +1,18 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { CalculatorContext } from "../contexts/CalculatorContext";
 
-interface AdvancedSettingsProps {
-  participants: number;
-  setParticipants: (value: number) => void;
-  customRewardPercentage: number;
-  setCustomRewardPercentage: (value: number) => void;
-  customTotalSupply: number;
-  setCustomTotalSupply: (value: number) => void;
-  fdvMin: number;
-  setFdvMin: (value: number) => void;
-  fdvMax: number;
-  setFdvMax: (value: number) => void;
-  useCustomValues: boolean;
-  setUseCustomValues: (value: boolean) => void;
-}
-
-export default function AdvancedSettings({
-  participants,
-  setParticipants,
-  customRewardPercentage,
-  setCustomRewardPercentage,
-  customTotalSupply,
-  setCustomTotalSupply,
-  fdvMin,
-  setFdvMin,
-  fdvMax,
-  setFdvMax,
-  useCustomValues,
-  setUseCustomValues,
-}: AdvancedSettingsProps) {
-  const [isOpen, setIsOpen] = useState(false);
+export default function AdvancedSettings() {
+  const { state, dispatch } = useContext(CalculatorContext);
+  const {
+    participants,
+    customRewardPercentage,
+    customTotalSupply,
+    fdvMin,
+    fdvMax,
+    useCustomValues,
+  } = state;
+  const [isOpen, setIsOpen] = useState(false); // 기본적으로 접혀있음
 
   const formatNumber = (num: number): string => {
     if (num >= 1000000000) return `${(num / 1000000000).toFixed(1)}B`;
@@ -45,6 +27,15 @@ export default function AdvancedSettings({
     borderRadius: "9999px",
     height: "8px",
     cursor: "pointer",
+  };
+
+  const handleReset = () => {
+    dispatch({ type: "SET_PARTICIPANTS", payload: 100 });
+    dispatch({ type: "SET_CUSTOM_REWARD_PERCENTAGE", payload: 0.1 });
+    dispatch({ type: "SET_CUSTOM_TOTAL_SUPPLY", payload: 1000000000 });
+    dispatch({ type: "SET_FDV_MIN", payload: 100000 });
+    dispatch({ type: "SET_FDV_MAX", payload: 10000000000 });
+    dispatch({ type: "SET_USE_CUSTOM_VALUES", payload: false });
   };
 
   return (
@@ -103,7 +94,12 @@ export default function AdvancedSettings({
                   </p>
                 </div>
                 <motion.button
-                  onClick={() => setUseCustomValues(!useCustomValues)}
+                  onClick={() =>
+                    dispatch({
+                      type: "SET_USE_CUSTOM_VALUES",
+                      payload: !useCustomValues,
+                    })
+                  }
                   className={`relative w-12 h-6 rounded-full transition-colors ${
                     useCustomValues ? "bg-blue-500" : "bg-white/20"
                   }`}
@@ -132,7 +128,12 @@ export default function AdvancedSettings({
                     max="10000"
                     step="10"
                     value={participants}
-                    onChange={(e) => setParticipants(Number(e.target.value))}
+                    onChange={(e) =>
+                      dispatch({
+                        type: "SET_PARTICIPANTS",
+                        payload: Number(e.target.value),
+                      })
+                    }
                     style={sliderStyle}
                     className="w-full"
                   />
@@ -168,7 +169,10 @@ export default function AdvancedSettings({
                           step="0.01"
                           value={customRewardPercentage}
                           onChange={(e) =>
-                            setCustomRewardPercentage(Number(e.target.value))
+                            dispatch({
+                              type: "SET_CUSTOM_REWARD_PERCENTAGE",
+                              payload: Number(e.target.value),
+                            })
                           }
                           style={sliderStyle}
                           className="w-full"
@@ -196,7 +200,10 @@ export default function AdvancedSettings({
                           step="1000000"
                           value={customTotalSupply}
                           onChange={(e) =>
-                            setCustomTotalSupply(Number(e.target.value))
+                            dispatch({
+                              type: "SET_CUSTOM_TOTAL_SUPPLY",
+                              payload: Number(e.target.value),
+                            })
                           }
                           style={sliderStyle}
                           className="w-full"
@@ -224,9 +231,13 @@ export default function AdvancedSettings({
                           step="10000"
                           value={fdvMin}
                           onChange={(e) =>
-                            setFdvMin(
-                              Math.min(Number(e.target.value), fdvMax - 10000)
-                            )
+                            dispatch({
+                              type: "SET_FDV_MIN",
+                              payload: Math.min(
+                                Number(e.target.value),
+                                fdvMax - 10000
+                              ),
+                            })
                           }
                           style={sliderStyle}
                           className="w-full"
@@ -246,9 +257,13 @@ export default function AdvancedSettings({
                           step="100000"
                           value={fdvMax}
                           onChange={(e) =>
-                            setFdvMax(
-                              Math.max(Number(e.target.value), fdvMin + 10000)
-                            )
+                            dispatch({
+                              type: "SET_FDV_MAX",
+                              payload: Math.max(
+                                Number(e.target.value),
+                                fdvMin + 10000
+                              ),
+                            })
                           }
                           style={sliderStyle}
                           className="w-full"
@@ -261,14 +276,7 @@ export default function AdvancedSettings({
 
               {/* Reset Button */}
               <motion.button
-                onClick={() => {
-                  setParticipants(100);
-                  setCustomRewardPercentage(0.1);
-                  setCustomTotalSupply(1000000000);
-                  setFdvMin(100000);
-                  setFdvMax(10000000000);
-                  setUseCustomValues(false);
-                }}
+                onClick={handleReset}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="w-full py-2 px-4 bg-white/[0.05] hover:bg-white/[0.08] border border-white/[0.1] rounded-xl text-white/60 text-sm transition-colors"

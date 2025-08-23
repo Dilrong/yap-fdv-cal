@@ -1,25 +1,13 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  type DistributionModel,
-  type DistributionTier,
-  distributionModels,
-} from "../constants/distributionModels";
+import { CalculatorContext } from "../contexts/CalculatorContext";
+import { distributionModels } from "../constants/distributionModels";
+import { DistributionTier } from "../types";
 
-interface RewardDistributionProps {
-  selectedModel: DistributionModel;
-  setSelectedModel: (model: DistributionModel) => void;
-  totalParticipants: number;
-  setTotalParticipants: (count: number) => void;
-}
-
-export default function RewardDistribution({
-  selectedModel,
-  setSelectedModel,
-  totalParticipants,
-  setTotalParticipants,
-}: RewardDistributionProps) {
-  const [isOpen, setIsOpen] = useState(false);
+export default function RewardDistribution() {
+  const { state, dispatch } = useContext(CalculatorContext);
+  const { selectedDistributionModel, totalParticipants } = state;
+  const [isOpen, setIsOpen] = useState(false); // 기본적으로 접혀있음
 
   const formatNumber = (num: number): string => {
     return num.toLocaleString();
@@ -50,8 +38,8 @@ export default function RewardDistribution({
           <div className="text-left">
             <h3 className="text-white/80 font-medium">Reward Distribution</h3>
             <p className="text-white/40 text-xs">
-              {selectedModel.name} • {formatNumber(totalParticipants)}{" "}
-              participants
+              {selectedDistributionModel.name} •{" "}
+              {formatNumber(totalParticipants)} participants
             </p>
           </div>
         </div>
@@ -91,7 +79,10 @@ export default function RewardDistribution({
                     step="50"
                     value={totalParticipants}
                     onChange={(e) =>
-                      setTotalParticipants(Number(e.target.value))
+                      dispatch({
+                        type: "SET_TOTAL_PARTICIPANTS",
+                        payload: Number(e.target.value),
+                      })
                     }
                     className="w-full h-2 bg-white/[0.05] rounded-full appearance-none cursor-pointer"
                     style={{
@@ -118,9 +109,14 @@ export default function RewardDistribution({
                   {distributionModels.map((model) => (
                     <motion.button
                       key={model.id}
-                      onClick={() => setSelectedModel(model)}
+                      onClick={() =>
+                        dispatch({
+                          type: "SET_SELECTED_DISTRIBUTION_MODEL",
+                          payload: model,
+                        })
+                      }
                       className={`p-4 rounded-xl border text-left transition-all ${
-                        selectedModel.id === model.id
+                        selectedDistributionModel.id === model.id
                           ? "bg-white/[0.05] border-indigo-400/50 ring-1 ring-indigo-400/30"
                           : "bg-white/[0.02] border-white/[0.05] hover:bg-white/[0.03]"
                       }`}
@@ -147,7 +143,7 @@ export default function RewardDistribution({
                   Distribution Breakdown
                 </h4>
                 <div className="space-y-3">
-                  {selectedModel.tiers.map((tier, index) => {
+                  {selectedDistributionModel.tiers.map((tier, index) => {
                     const actualParticipants =
                       calculateParticipantsForTier(tier);
                     const rewardPerPerson =
@@ -217,13 +213,15 @@ export default function RewardDistribution({
               {/* Summary */}
               <div className="p-4 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-xl border border-indigo-500/20">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-lg">{selectedModel.icon}</span>
+                  <span className="text-lg">
+                    {selectedDistributionModel.icon}
+                  </span>
                   <span className="text-indigo-400 font-medium">
-                    {selectedModel.name}
+                    {selectedDistributionModel.name}
                   </span>
                 </div>
                 <p className="text-white/60 text-sm">
-                  {selectedModel.description}
+                  {selectedDistributionModel.description}
                 </p>
               </div>
             </div>

@@ -1,8 +1,5 @@
 import { motion } from "framer-motion";
-import {
-  type DistributionModel,
-  type DistributionTier,
-} from "../constants/distributionModels";
+import { DistributionModel, DistributionTier } from "../types";
 
 interface DistributionResultsProps {
   rewardTokens: number;
