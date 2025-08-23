@@ -4,6 +4,7 @@ export interface LeaderboardToken {
   imgUrl: string;
   totalSupply?: number;
   yappingRewardPercentage?: number;
+  category?: string;
 }
 
 export interface SelectedToken {

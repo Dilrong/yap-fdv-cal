@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { CalculatorContext } from "../contexts/CalculatorContext";
-import { TrendingUp, DollarSign, Minus, Plus } from "lucide-react";
+import { TrendingUp } from "lucide-react";
 
 export default function FDVSlider() {
   const { state, dispatch } = useContext(CalculatorContext);
